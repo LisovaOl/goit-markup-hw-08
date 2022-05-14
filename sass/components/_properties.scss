@@ -5,6 +5,10 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $link-color;
+    @media screen and (max-width: 767px) {      
+      text-align: center;
+
+      }
   
   }
   
@@ -16,22 +20,46 @@
     margin-bottom: 0px;
     margin-top: 10px;
 
+
+
+
+
   }
 
   .properties{
-    display: flex;
+    @media screen and (min-width: 768px) {
+         display: flex;
+         flex-wrap: wrap;
+         margin: -15px;
+         
+     }
+     @media screen and (min-width: 1200px) {
+        flex-wrap: nowrap;
+    }
   }
 
   .properties__item{
-    width: 270px;
+
+    @media screen and (max-width: 767px) {      
+      margin-bottom: 30px;
+            }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 4 * 15px) / 2);      
+      margin: 15px;
+ }
+
 
     &:not(:last-child){
-      margin-right: 30px;
+
+      @media screen and (min-width: 1200px) {      
+        margin-right: 30px;
+
+        }
     }
 
   }
   .properties__box{
-    width: 270px;
     height: 120px;
     background-color: $icon-properties-background;
     margin-bottom: 30px;
