@@ -1,0 +1,63 @@
+// $body-background: #ffffff;
+// $primary-color: #757575;
+// $title-color: #212121;
+
+
+
+body {
+  background-color: #ffffff;
+  color: #757575;
+  font-family: 'Roboto', sans-serif;
+  }
+
+.container{
+
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  }
+.section{
+  padding: 94px 0;
+  }
+
+.section--no-padding-top{
+  padding-top: 0;
+}
+.section--team-background{
+  background-color: #F5F4FA;
+}
+
+  
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  }
+h1,
+h2, 
+h3, 
+p{
+  padding: 0;
+  margin: 0;
+  }
+/* базові */
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+  }
+
+  
+  /* Базові H2 */
+.section__title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-bottom: 50px;
+  }

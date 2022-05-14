@@ -1,0 +1,43 @@
+  /* Базова кнопка button */
+  
+.button{
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  border: transparent;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: $base-button-color;
+  background-color: $button-background;
+  cursor: pointer;
+
+    &:hover,
+    &:focus{
+      background-color: $button-hover;
+
+    }
+
+}
+.form__button{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.subscribe__button{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-left: 12px;
+}
+
+.order__button {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+    
+
+              

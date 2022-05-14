@@ -1,0 +1,35 @@
+  /* Базові для логотипа */
+.logo{
+  color: $base-logo-color;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $acsent-color;
+    }
+  
+
+  
+}
+
+.logo__web{
+color: $acsent-color;
+}
+
+
+
+.logo--foot {
+color: $logo-foot-color;
+
+}
+
+.logo--header{
+margin-right: 93px;
+
+}
