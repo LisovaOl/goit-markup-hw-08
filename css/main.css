@@ -157,7 +157,12 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin-left: 12px;
+  margin: auto;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe__button {
+    margin-left: 12px;
+  }
 }
 
 .order__button {
@@ -209,9 +214,20 @@ img {
   color: #EEEEEE;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .social-title {
+    text-align: start;
+  }
+}
 
 .footer__social {
-  margin-right: 93px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .footer__social {
+    margin-right: 93px;
+    margin-bottom: 0;
+  }
 }
 
 .social__link--footer {
@@ -219,8 +235,10 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.sb-social {
-  margin-bottom: 20px;
+@media screen and (min-width: 1200px) {
+  .sb-social {
+    text-align: start;
+  }
 }
 
 /* Header */
@@ -729,12 +747,35 @@ img {
   padding-bottom: 60px;
 }
 .footer .footer__address {
-  width: 231px;
-  margin-right: 70px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer .footer__address {
+    margin-right: 165px;
+    text-align: start;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .footer__address {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-container {
-  align-items: baseline;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer__tablet {
+    display: flex;
+  }
 }
 
 /* Адрес - карта */
@@ -936,11 +977,14 @@ img {
 }
 
 /* Подпишись на рассылку */
-.subscribe {
-  justify-content: center;
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    display: flex;
+    justify-content: center;
+  }
 }
 .subscribe .subscribe__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   padding-left: 15px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -948,6 +992,13 @@ img {
   border-radius: 4px;
   background-color: #2f303a;
   color: #ffffff;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .subscribe .subscribe__input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 .subscribe .subscribe__input:focus {
   color: #ffffff;
