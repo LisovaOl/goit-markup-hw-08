@@ -90,5 +90,9 @@
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M9.143 11.886l-0.152-0.152-1.524 1.371v0.152l5.333 5.181h0.152l11.581-10.971v-0.152l-1.524-1.371-10.057 9.6-3.81-3.657z"></path>
 </symbol>
 
+<symbol id="icon-menu-mobile" viewBox="0 0 32 32">
+<path d="M6.4 11.76v-2.16h19.2v2.16h-19.2zM6.4 17.040h19.2v-2.080h-19.2v2.080zM6.4 22.4h19.2v-2.16h-19.2v2.16z"></path>
+</symbol>
+
 </defs>
 </svg>
