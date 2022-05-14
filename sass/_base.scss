@@ -44,7 +44,13 @@ body {
   background-color: #F5F4FA;
   padding: 60px 0;
 }
-
+.section--clients{
+  padding: 60px 0;
+  
+  @media  screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+}
   
 ul{
   list-style: none;
