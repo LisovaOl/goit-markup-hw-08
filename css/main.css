@@ -132,10 +132,6 @@ img {
   color: #ffffff;
 }
 
-.logo--header {
-  margin-right: 93px;
-}
-
 /* Базова кнопка button */
 .button {
   font-family: inherit;
@@ -207,24 +203,6 @@ img {
   display: none;
 }
 
-@media screen and (max-width: 767px) {
-  .menu-mobile-container {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    height: 790px;
-    background-color: #ffffff;
-    padding: 20px;
-    text-align: center;
-    font-size: 20px;
-  }
-}
-
-.menu-mobile-container.is-open {
-  display: block;
-}
 .social {
   display: flex;
   justify-content: center;
@@ -333,6 +311,11 @@ img {
 .nav {
   display: block;
 }
+@media screen and (max-width: 767px) {
+  .nav {
+    margin-bottom: 302px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
@@ -341,23 +324,31 @@ img {
 
 .nav__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
+  font-size: 40px;
+  line-height: 47px;
   letter-spacing: 0.02em;
-  color: #212121;
   text-decoration: none;
+  color: #212121;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .nav__link {
+    font-size: 14px;
+    line-height: 1.1;
+    position: relative;
+  }
 }
 .nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
 
-.nav__item:not(:first-child) {
-  margin-left: 50px;
+@media screen and (min-width: 768px) {
+  .nav__item:not(:first-child) {
+    margin-left: 50px;
+  }
 }
 
 .nav__link--current {
@@ -372,30 +363,62 @@ img {
   background-color: #2196f3;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: -17px;
 }
-
-.contacts {
-  margin-left: auto;
-}
-@media screen and (min-width: 1200px) {
-  .contacts {
-    display: flex;
+@media screen and (max-width: 767px) {
+  .nav__link--current::after {
+    display: none;
   }
 }
 
-.contacts__link {
-  align-items: center;
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-left: 84px;
+  }
+}
+
+.menu-tel {
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196F3;
+}
+@media screen and (min-width: 768px) {
+  .menu-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.1;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+.menu-email {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.1;
   letter-spacing: 0.02em;
   color: #757575;
   text-decoration: none;
+}
+@media screen and (min-width: 768px) {
+  .menu-email {
+    font-size: 14px;
+  }
+}
+
+.contacts__link {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    display: flex;
+    align-items: center;
+  }
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
@@ -405,8 +428,14 @@ img {
 }
 
 .contacts__icon {
-  margin-right: 10px;
-  fill: currentColor;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .contacts__icon {
+    display: block;
+    margin-right: 10px;
+    fill: currentColor;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -415,9 +444,41 @@ img {
   }
 }
 
+.contacts__item:not(:first-child) {
+  margin-top: 32px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__item:not(:first-child) {
     margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-mobile-container {
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-mobile-container {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 790px;
+    background-color: #ffffff;
+    padding: 20px;
+    font-size: 20px;
+  }
+}
+
+.menu-mobile-container.is-open {
+  display: block;
+  z-index: 100;
+}
+@media screen and (min-width: 768px) {
+  .menu-mobile-container.is-open {
+    display: flex;
   }
 }
 
@@ -1029,11 +1090,11 @@ img {
 /* Checkbox */
 .checkbox {
   display: flex;
+  z-index: 200;
   align-items: center;
   justify-content: center;
   font-size: 12px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
   margin-bottom: 30px;
   margin-top: 20px;
@@ -1053,7 +1114,7 @@ img {
   margin-right: 8px;
 }
 .checkbox .checkbox__contract {
-  margin-left: 5px;
+  margin-left: 2px;
   color: #2196f3;
 }
 
