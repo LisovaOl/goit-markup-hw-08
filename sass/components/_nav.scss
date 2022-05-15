@@ -183,6 +183,7 @@
 
 // Моюильное меню
 .menu-mobile-container{
+  z-index: 100;
 
   @media screen and (min-width: 768px) {
   display: flex;
@@ -195,7 +196,7 @@
     left: 0;
     top: 60px;
     width: 100%;
-    height: 790px;
+    height: 796px;
     background-color: #ffffff;
     padding: 20px;
     font-size: 20px;
@@ -205,7 +206,6 @@
 
   .menu-mobile-container.is-open{
       display: block;
-      z-index: 100;
 
       @media screen and (min-width: 768px) {
         display: flex;
@@ -213,3 +213,34 @@
       }
     }
 
+// социальные сети мобильного меню
+
+.soc-mobile{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+    }
+
+}
+.soc-mobile_link{
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: #2196F3;
+
+}
+
+.soc-mobile_item:not(:last-child){
+  // margin-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.soc-mobile_item{
+  padding: 0 5px;
+ 
+}

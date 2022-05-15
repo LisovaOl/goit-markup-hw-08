@@ -473,6 +473,9 @@ img {
   }
 }
 
+.menu-mobile-container {
+  z-index: 100;
+}
 @media screen and (min-width: 768px) {
   .menu-mobile-container {
     display: flex;
@@ -486,7 +489,7 @@ img {
     left: 0;
     top: 60px;
     width: 100%;
-    height: 790px;
+    height: 796px;
     background-color: #ffffff;
     padding: 20px;
     font-size: 20px;
@@ -495,12 +498,39 @@ img {
 
 .menu-mobile-container.is-open {
   display: block;
-  z-index: 100;
 }
 @media screen and (min-width: 768px) {
   .menu-mobile-container.is-open {
     display: flex;
   }
+}
+
+.soc-mobile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 64px;
+}
+@media screen and (min-width: 768px) {
+  .soc-mobile {
+    display: none;
+  }
+}
+
+.soc-mobile_link {
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #2196F3;
+}
+
+.soc-mobile_item:not(:last-child) {
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.soc-mobile_item {
+  padding: 0 5px;
 }
 
 .order {
@@ -771,6 +801,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+  justify-content: center;
 }
 @media screen and (min-width: 1200px) {
   .filtr {
@@ -977,6 +1008,7 @@ img {
 /* Modal Dima */
 .backdrop {
   position: fixed;
+  z-index: 100;
   top: 0;
   left: 0;
   width: 100%;
@@ -1165,6 +1197,7 @@ img {
   background-color: #2f303a;
   color: #ffffff;
   margin-bottom: 20px;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .subscribe .subscribe__input {
