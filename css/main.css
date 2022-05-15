@@ -132,6 +132,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 1200px) {
+  .logo--header {
+    margin-right: 93px;
+  }
+}
+
 /* Базова кнопка button */
 .button {
   font-family: inherit;
@@ -376,6 +382,13 @@ img {
     margin-left: 84px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 250px;
+  }
+}
 
 .menu-tel {
   font-size: 34px;
@@ -414,7 +427,7 @@ img {
 .contacts__link:hover, .contacts__link:focus {
   color: #2196f3;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .contacts__link {
     display: flex;
     align-items: center;
@@ -422,6 +435,8 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .contacts__link {
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
   }
@@ -440,7 +455,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .contacts__item + .contacts__item {
-    margin-left: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -452,10 +467,16 @@ img {
     margin-top: 10px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts__item:not(:first-child) {
+    margin-top: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .menu-mobile-container {
     display: flex;
+    align-items: center;
   }
 }
 @media screen and (max-width: 767px) {
