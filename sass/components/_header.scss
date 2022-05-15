@@ -3,13 +3,19 @@
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: #ECECEC;
+
     }
 .header__container{
+    position: relative;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 60px;
     width: 480px;
+
+    // position: relative;
+
 
 
     @media screen and (min-width: 480px) {

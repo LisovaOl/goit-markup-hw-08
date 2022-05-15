@@ -40,13 +40,22 @@
                     </svg>
                     +38 096 111 11 11</a></li>
             </ul>
-            <button class="btn-menu-mobile" type="button">
-                <svg width="40px" height="40px" >
-                    <use href="./images/icons/icons.svg#icon-menu-mobile"></use>
-                    <use href="./images/icons/icons.svg#icon-close-mobile"></use>
+            <button class="btn-menu-mobile" 
+                type="button"
+                aria-expanded="false"  
+                data-menu-button>
+
+                <svg width="40px" height="40px" 
+                aria-label="Переключатель мобильного меню"
+                >
+                    <use class="icon-menu-mobile" href="./images/icons/icons.svg#icon-menu-mobile"></use>
+                    <use class="icon-close-mobile" href="./images/icons/icons.svg#icon-close-mobile"></use>
 
                 </svg>
             </button>
+            <div class="menu-mobile-container" data-menu>
+                Мобильное меню
+            </div>
         </div>
     </header>
 
@@ -496,6 +505,7 @@
 
         </div>
     </footer>
-    <script src="./js/modal.js"></script>  
+    <script src="./js/modal.js"></script> 
+    <script src="./js/mobile-menu.js"></script> 
 </body>
 </html>

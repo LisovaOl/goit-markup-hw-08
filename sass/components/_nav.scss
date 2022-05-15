@@ -2,7 +2,7 @@
 .nav{
   display: flex;
 
-  @media  screen and (max-width: 480px) {
+  @media  screen and (max-width: 767px) {
     display: none;
   }
   }
@@ -55,7 +55,7 @@
 .contacts{
   margin-left: auto;
   
-  @media  screen and (max-width: 480px) {
+  @media  screen and (max-width: 767px) {
     display: none;
 
   }
