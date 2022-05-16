@@ -10,6 +10,7 @@
     to top, rgba(47,48,58,0.4), rgba(47,48,58,0.4)
   ), 
   url(/images/index/mobile/img-bg-mobile.jpg );
+  
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -25,56 +26,57 @@
     height: 600px;
     padding-top: 200px;
 }
-
-
-  .order__title {
-    font-weight: 900;
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: $order-title-color;
-    margin-bottom: 30px;
-
- 
-    @media screen and (min-width: 1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-    }
-  }
-
-}
 @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-  .order{
-    background-image: url(/images/index/mobile/img-bg-mobile@2.jpg);
+(min-resolution: 192dpi),
+(min-resolution: 2dppx){
+  background-image: url(/images/index/mobile/img-bg-mobile@2.jpg);
+}
+}
+
+
+.order__title {
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $order-title-color;
+  margin-bottom: 30px;
+
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
+
 
 @media (min-width: 767px){
   .order{
     background-image: url(/images/index/tablet/img-bg-tablet.jpg);
   }
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){
-  .order{
-    background-image: url(/images/index/tablet/img-bg-tablet@2x.jpg);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx){
+    .order{
+      background-image: url(/images/index/tablet/img-bg-tablet@2x.jpg);
+    }
   }
+
 }
+
 @media (min-width: 1200px){
   .order{
     background-image: url(/images/index/desctop/img-bg-desctop.jpg);
   }
-}
-@media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
   .order{
     background-image: url(/images/index/desctop/img-bg-desctop@2.jpg);
   }
 }
+}
+
 
