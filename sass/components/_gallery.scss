@@ -2,10 +2,17 @@
 /* Список без маркеров */
 
 .gallery{
+    display: flex;
+    @media screen and (max-width: 768px) {
+
+    flex-direction: column;
+    column-count: 1;
+    align-items: center;
+    }
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
-    }
+        justify-content: space-between;    }
     
     @media screen and (min-width: 1200px) {
         display: flex;
@@ -13,22 +20,29 @@
     }
 
     .gallery__item{
-        // margin-right: 30px;
-        margin-bottom: 30px;
-        
 
-    
+        margin-bottom: 30px;
+
+
         @media screen and (min-width: 768px) and (max-width: 1199px){
         width: calc((100% - 4 * 15px) / 2);
-              
-  
 
     }        
     }
 
+    // @media screen and (min-width: 768px) and (max-width: 1199px){
+    //     .gallery:last-child{
+    //             justify-content: left;
+
+    //     }
+    // }        
+
+
+
     .gallery__item:last-child{
         @media screen and (min-width: 768px) and (max-width: 1199px){
             margin-bottom: 0;
+
         }
     
     }
@@ -36,12 +50,14 @@
     .gallery__item:nth-child(3n){
             @media screen and (min-width: 1200px) {
             margin-right: 0;
+            
             }
         }
             
     .gallery__item:nth-last-child(-n+3){
             @media screen and (min-width: 1200px) {
                 margin-bottom: 0;
+
             }
         }
 
