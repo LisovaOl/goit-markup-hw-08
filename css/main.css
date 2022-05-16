@@ -541,7 +541,7 @@ img {
   background-color: #C4C4C4;
   background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/index/mobile/img-bg-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: cover;
   background-position: center;
   text-align: center;
 }
@@ -574,14 +574,29 @@ img {
   }
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url(/images/index/mobile/img-bg-mobile@2.jpg);
+  }
+}
 @media (min-width: 767px) {
   .order {
     background-image: url(/images/index/tablet/img-bg-tablet.jpg);
   }
 }
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url(/images/index/tablet/img-bg-tablet@2x.jpg);
+  }
+}
 @media (min-width: 1200px) {
   .order {
     background-image: url(/images/index/desctop/img-bg-desctop.jpg);
+  }
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .order {
+    background-image: url(/images/index/desctop/img-bg-desctop@2.jpg);
   }
 }
 .properties__title {
