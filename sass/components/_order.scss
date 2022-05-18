@@ -29,7 +29,8 @@
 @media (min-device-pixel-ratio: 2),
 (min-resolution: 192dpi),
 (min-resolution: 2dppx){
-  background-image: url(../images/index/bg-img/img-bg-mobile@2.jpg);
+  background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  url(../images/index/bg-img/img-bg-mobile@2.jpg);
 }
 }
 
@@ -54,13 +55,15 @@
 
 @media (min-width: 767px){
   .order{
-    background-image: url(../images/index/bg-img/img-bg-tablet.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/bg-img/img-bg-tablet.jpg);
   }
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx){
     .order{
-      background-image: url(../images/index/bg-img/img-bg-tablet@2x.jpg);
+      background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/index/bg-img/img-bg-tablet@2x.jpg);
     }
   }
 
@@ -68,13 +71,15 @@
 
 @media (min-width: 1200px){
   .order{
-    background-image: url(../images/index/bg-img/img-bg-desctop.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/bg-img/img-bg-desctop.jpg);
   }
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx){
   .order{
-    background-image: url(../images/index/bg-img/img-bg-desctop@2.jpg);
+    background-image: linear-gradient(to top, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/index/bg-img/img-bg-desctop@2.jpg);
   }
 }
 }
