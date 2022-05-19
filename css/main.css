@@ -126,12 +126,6 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 1200px) {
-  .logo--header {
-    margin-right: 93px;
-  }
-}
-
 /* Базова кнопка button */
 .button {
   font-family: inherit;
