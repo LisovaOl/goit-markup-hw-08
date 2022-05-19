@@ -45,34 +45,5 @@
 
     // Кнопки мобильного меню
 
-.btn-menu-mobile{
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-
-  @media screen and (min-width: 768px){
-    display: none;
-    
-  }
-}
-
-.btn-menu-mobile:hover,
-.btn-menu-mobile:focus{
-  fill: $acsent-color;
-}
-
-.btn-menu-mobile .icon-close-mobile{
-  display: none;
-}
-
-.btn-menu-mobile.is-open .icon-close-mobile {
-  display: block;
-}
-
-.btn-menu-mobile.is-open .icon-menu-mobile {
-  display: none;
-}
 
 
