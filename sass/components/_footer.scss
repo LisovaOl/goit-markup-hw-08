@@ -5,12 +5,12 @@
   padding-bottom: 60px;
 
     .footer__address{
-      margin-bottom: 60px;
+      // margin-bottom: 60px;
 
-      @media screen and (min-width: 768px) {
-        margin-right: 165px;
-        text-align: start;           
-      }
+      // @media screen and (min-width: 768px) {
+      //   margin-right: 165px;
+      //   text-align: start;           
+      // }
       @media screen and (min-width: 1200px) {
         margin-right: 70px;
         margin-bottom: 0;
@@ -30,8 +30,13 @@
 }
 
 .footer__tablet{
+    margin-bottom: 60px;
+    
   @media screen and (min-width: 768px) {
     display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+
     // flex-wrap: wrap;
     // margin: -15px;
        
