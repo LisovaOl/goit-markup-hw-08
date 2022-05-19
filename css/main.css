@@ -1234,6 +1234,9 @@ img {
 }
 
 /* Подпишись на рассылку */
+.subscribe {
+  /* Подпишись на рассылку */
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     display: flex;
