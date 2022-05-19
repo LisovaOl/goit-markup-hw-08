@@ -11,6 +11,7 @@
       }
       @media screen and (min-width: 1200px) {
         flex-wrap: nowrap;
+        margin: 0;
       }
 
 
@@ -27,10 +28,11 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
       background-color: $our-team-background;
 
+        &:not(:last-child) {
       @media screen and (max-width: 767px) {      
         margin-bottom: 30px;
       }
-
+    }
       @media screen and (min-width: 768px) and (max-width: 1199px) {
         width: calc((100% - 4 * 15px) / 2);      
         margin: 15px;
