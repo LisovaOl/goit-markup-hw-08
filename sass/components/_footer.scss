@@ -36,14 +36,11 @@
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-     // flex-wrap: wrap;
-    // margin: -15px;
        
   }
   @media screen and (min-width: 1200px) {
     text-align: start;
     margin-bottom: 0;
-    // margin-right: 93px;
   }
 }
 
