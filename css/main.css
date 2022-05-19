@@ -335,7 +335,7 @@ img {
   background-color: #2196f3;
   position: absolute;
   left: 0;
-  bottom: -17px;
+  bottom: -18px;
 }
 @media screen and (max-width: 767px) {
   .nav__link--current::after {
