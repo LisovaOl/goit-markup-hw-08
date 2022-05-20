@@ -884,11 +884,6 @@ img {
     margin-bottom: 0;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .gallery .gallery__item:last-child {
-    margin-bottom: 0;
-  }
-}
 @media screen and (min-width: 1200px) {
   .gallery .gallery__item:nth-child(3n) {
     margin-right: 0;
