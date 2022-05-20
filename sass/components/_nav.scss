@@ -2,9 +2,9 @@
 .nav{
   display: block;
 
-  @media  screen and (max-width: 767px) {
-    margin-bottom: 270px;
-  }
+  // @media  screen and (max-width: 767px) {
+  //   margin-bottom: 270px;
+  // }
 
   @media  screen and (min-width: 768px) {
     display: flex;
@@ -202,7 +202,9 @@
 }
 
 .menu-mobile-container.is-open{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     @media screen and (min-width: 768px) {
       display: flex;
@@ -247,7 +249,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 64px;
-  margin-bottom: 28px;
+  // margin-bottom: 28px;
 
   @media screen and (min-width: 768px) {
     display: none;

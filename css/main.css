@@ -253,11 +253,6 @@ img {
 .nav {
   display: block;
 }
-@media screen and (max-width: 767px) {
-  .nav {
-    margin-bottom: 270px;
-  }
-}
 @media screen and (min-width: 768px) {
   .nav {
     display: flex;
@@ -432,7 +427,9 @@ img {
 }
 
 .menu-mobile-container.is-open {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 @media screen and (min-width: 768px) {
   .menu-mobile-container.is-open {
@@ -476,7 +473,6 @@ img {
   align-items: center;
   justify-content: center;
   margin-top: 64px;
-  margin-bottom: 28px;
 }
 @media screen and (min-width: 768px) {
   .soc-mobile {
