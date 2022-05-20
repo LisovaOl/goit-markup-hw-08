@@ -444,6 +444,11 @@ img {
   }
 }
 
+.btn-menu-mobile.is-open {
+  position: fixed;
+  top: 3%;
+}
+
 .btn-menu-mobile {
   display: inline-flex;
   margin: 0;
@@ -458,6 +463,12 @@ img {
   }
 }
 
+.btn-menu-mobile.is-open {
+  position: fixed;
+  right: 15px;
+  top: 10px;
+}
+
 .btn-menu-mobile:hover,
 .btn-menu-mobile:focus {
   fill: #2196f3;
@@ -469,6 +480,9 @@ img {
 
 .btn-menu-mobile.is-open .icon-close-mobile {
   display: block;
+  position: fixed;
+  right: 30px;
+  top: 30px;
 }
 
 .btn-menu-mobile.is-open .icon-menu-mobile {

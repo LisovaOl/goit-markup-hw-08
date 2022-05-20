@@ -212,6 +212,10 @@
       
     }
   }
+  .btn-menu-mobile.is-open {
+    position: fixed;
+    top: 3%;
+  }
 
 .btn-menu-mobile {
   display: inline-flex;
@@ -227,6 +231,12 @@
   }
 }
 
+    .btn-menu-mobile.is-open {
+      position: fixed;
+      right: 15px;
+      top: 10px;    
+    }
+
 .btn-menu-mobile:hover,
 .btn-menu-mobile:focus {
   fill: $acsent-color;
@@ -238,11 +248,15 @@
 
 .btn-menu-mobile.is-open .icon-close-mobile {
   display: block;
+  position: fixed;
+  right: 30px;
+  top: 30px;
 }
 
 .btn-menu-mobile.is-open .icon-menu-mobile {
   display: none;
 }
+
 // социальные сети мобильного меню
 
 .soc-mobile{
