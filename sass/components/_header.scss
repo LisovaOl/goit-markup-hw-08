@@ -1,20 +1,17 @@
 /* Header */
-.header{
-    border-bottom-width: 1px;
-    border-bottom-style: solid;
-    border-bottom-color: #ECECEC;
-
-    }
-.header__container{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 60px;
-
-    @media screen and (min-width: 768px) {
-        height: 80px;
-    }
+.header {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
+.header__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
 
-
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
+}

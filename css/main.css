@@ -46,7 +46,7 @@ body {
 }
 
 .section--team-background {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 ul {
@@ -239,7 +239,7 @@ img {
 .header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  border-bottom-color: #ECECEC;
+  border-bottom-color: #ececec;
 }
 
 .header__container {
@@ -331,7 +331,7 @@ img {
   line-height: 40px;
   letter-spacing: 0.02em;
   text-decoration: none;
-  color: #2196F3;
+  color: #2196f3;
 }
 @media screen and (min-width: 768px) {
   .menu-tel {
@@ -507,7 +507,7 @@ img {
   letter-spacing: 0.02em;
   text-decoration: none;
   margin-top: auto;
-  color: #2196F3;
+  color: #2196f3;
 }
 
 .soc-mobile_item:not(:last-child) {

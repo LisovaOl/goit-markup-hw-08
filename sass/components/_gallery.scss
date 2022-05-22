@@ -1,176 +1,142 @@
 /* Галерея */
 /* Список без маркеров */
 
-.gallery{
-    // display: flex;
-    
-    
-    // @media screen and (max-width: 768px) {
-    //     width: 480px;
+.gallery {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
-    // flex-direction: column;
-    // column-count: 1;
-    // align-items: center;
-    // margin-top: -15px;
-    // }
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        margin: -15px;
-    }
-    
-    @media screen and (min-width: 1200px) {
-        display: flex;
-        flex-wrap: wrap;
-    }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-.gallery__item:not(:last-child) {
-
+  .gallery__item:not(:last-child) {
     margin-bottom: 30px;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 15px;
+      margin-bottom: 15px;
     }
+  }
 
-}
+  .gallery__item {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: calc((100% - 4 * 15px) / 2);
+      margin: 15px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      margin-bottom: 30px;
 
-    .gallery__item{
-
-        @media screen and (min-width: 768px) and (max-width: 1199px){
-            width: calc((100% - 4 * 15px) / 2);
-        margin: 15px;;
-
-    } 
-        @media screen and (min-width: 1200px) {
-    margin-right: 30px;
-    margin-bottom: 30px;
-
-    &:nth-child(3n) {
+      &:nth-child(3n) {
         margin-right: 0;
-    }
+      }
 
-    &:nth-last-child(-n+3) {
+      &:nth-last-child(-n + 3) {
         margin-bottom: 0;
+      }
     }
-        }
+  }
+
+  // .gallery__item:last-child{
+  //     @media screen and (min-width: 768px) and (max-width: 1199px){
+  //         margin-bottom: 0;
+
+  //     }
+
+  // }
+
+  .gallery__item:nth-child(3n) {
+    @media screen and (min-width: 1200px) {
+      margin-right: 0;
     }
+  }
 
-
-
-
-    // .gallery__item:last-child{
-    //     @media screen and (min-width: 768px) and (max-width: 1199px){
-    //         margin-bottom: 0;
-
-    //     }
-    
-    // }
-    
-    .gallery__item:nth-child(3n){
-            @media screen and (min-width: 1200px) {
-            margin-right: 0;
-            
-            }
-        }
-            
-    .gallery__item:nth-last-child(-n+3){
-            @media screen and (min-width: 1200px) {
-                margin-bottom: 0;
-
-            }
-        }
-
-
-    
-    .gallery__link{
-        
-
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        text-decoration: none;
-        transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            
-        &:hover,
-        &:focus{
-
-            box-shadow: 
-            0px 1px 1px rgba(0, 0, 0, 0.12), 
-            0px 4px 4px rgba(0, 0, 0, 0.06), 
-            1px 4px 6px rgba(0, 0, 0, 0.16);
-        }
-
-        
+  .gallery__item:nth-last-child(-n + 3) {
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
     }
-    .gallery__title {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: $title-color;
-    
+  }
+
+  .gallery__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    text-decoration: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
     }
-    
-    .gallery__text {
-        font-size: 16px;
-        line-height: 1.88;
-        letter-spacing: 0.03em;
-        color: $primary-color;
-        margin-top: 4px;
-    
-    }
-    
-    .gallery__border{
-        padding: 20px 24px;
-        flex-grow: 1;
-        
+  }
+  .gallery__title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: $title-color;
+  }
+
+  .gallery__text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: $primary-color;
+    margin-top: 4px;
+  }
+
+  .gallery__border {
+    padding: 20px 24px;
+    flex-grow: 1;
+
     /* Установит стили правой рамки */
-        border-right-width: 1px;
-        border-right-style: solid;
-        border-right-color: $border-color;
-        
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: $border-color;
+
     /* Установит стили нинжней рамки */
-        border-bottom-width: 1px;
-        border-bottom-style: solid;
-        border-bottom-color: $border-color; 
-    
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $border-color;
+
     /* Установит стили левой рамки */
-        border-left-width: 1px;
-        border-left-style: solid;
-        border-left-color: $border-color;
-    
-    }
-
-
+    border-left-width: 1px;
+    border-left-style: solid;
+    border-left-color: $border-color;
+  }
 }
 .gallery__overlay {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
-.overlay__text{
-    color: $overlay-text-color;
-    font-size: 18px;
-    line-height: 1.55;
-    letter-spacing: 0.03em;
-    padding: 77px 24px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: transform 250ms linear;
+.overlay__text {
+  color: $overlay-text-color;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 77px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms linear;
 
-        .gallery__link:hover &,
-        .gallery__link:focus &{
-        transform: translateY(0);
-        }
-@media screen and (min-width: 768px) {
-        padding-top: 49px;
-}
+  .gallery__link:hover &,
+  .gallery__link:focus & {
+    transform: translateY(0);
+  }
+  @media screen and (min-width: 768px) {
+    padding-top: 49px;
+  }
 
-@media screen and (min-width: 1200px) {
-    padding: 63px 24px;}
-
+  @media screen and (min-width: 1200px) {
+    padding: 63px 24px;
+  }
 }
